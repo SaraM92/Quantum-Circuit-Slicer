@@ -1,4 +1,4 @@
-# Quantum Circuit Slicer (QCCS)
+# Quantum Circuit Slicer (QCS)
 
 
 This repo contains files to add a quantum circuit slicer to Qiksit. The slicer provides some useful functions for debugging quantum circuits.
@@ -14,7 +14,7 @@ The circuit slicer includes:
 Instructions
 ---
 ### Installation
-To use the circuit slicer, you need to have a working version of Qiskit (version 0.19.6 pr higher)
+To use the circuit slicer, you need to have a working version of Qiskit (version 0.19.6 or higher)
 
 `pip install quantum-circuit-slicer`
 
