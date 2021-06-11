@@ -16,7 +16,7 @@ Instructions
 ### Installation
 To use the circuit slicer, you need to have a working version of Qiskit (version 0.19.6 pr higher)
 
-`pip install qcs`
+`pip install quantum-circuit-slicer`
 
 ### Test
 Once the package is installed, try running the file test.py to make sure eveything is installed and working properly, and how to use the slicer.
