@@ -3,8 +3,8 @@ warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", category=DeprecationWarning) 
 
 from qiskit.circuit.barrier import Barrier
-from gatefinder import startCount
-from breakbarrier import breakbarrier
+from qcs.gatefinder import startCount
+from qcs.breakbarrier import breakbarrier
 
 
 def startDebug():
