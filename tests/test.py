@@ -1,7 +1,7 @@
 from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit
-from qcs import startDebug
-from slicer import Vslicer, Hslicer
-from  gatefinder import gateLoc
+from qcs.qcs import startDebug
+from qcs.slicer import Vslicer, Hslicer
+from qcs.gatefinder import gateLoc
 
 def Quan_full_adder(qc, in_qbits,zero_qubit): # a function to build a simple full-adder circuit
     #in_qbits = QuantumRegister(3,name='input')
