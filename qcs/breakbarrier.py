@@ -5,7 +5,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", category=DeprecationWarning) 
 from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit, Aer, execute
 from qiskit.circuit.barrier import Barrier
-from gatefinder import startCount
+from qcs.gatefinder import startCount
 
 class BreakPoint(Barrier):
     def __init__(self, ints):
