@@ -1,5 +1,5 @@
 # This file includes the slicer functions
-from workfuncs import get_barrier_locs, slice_list_with_indeces, remove_barrier
+from qcs.workfuncs import get_barrier_locs, slice_list_with_indeces, remove_barrier
 import warnings
 import re
 from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit, Aer, execute
