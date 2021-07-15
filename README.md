@@ -1,7 +1,7 @@
 # Quantum Circuit Slicer (QCS)
 
 
-This repo contains files to add a quantum circuit slicer to Qiksit. The slicer provides some useful functions for debugging quantum circuits.
+This repo contains files to add a quantum circuit slicer to Qiskit. The slicer provides some useful functions for debugging quantum circuits.
 
 The circuit slicer includes:
 1. The addition of the "breakbarrier" object, which acts as a breakpoint for quantum circuits.
