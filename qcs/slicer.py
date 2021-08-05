@@ -69,9 +69,9 @@ def Hslicer(cirSlice): #Add register name
     #print(qunRegs)
     sub_slices = []
     for reg in qunRegs.keys():
-        temp_reg = QuantumRegister(qunRegs[reg], name=reg)
+        temp_reg = QuantumRegister(int(qunRegs[reg]), name=reg)
         temp_cir = QuantumCircuit(temp_reg)
-        for gate in state_prep:   
+        for gate in cirSlice:   
             if str(gate[1]).find(reg) != -1:            
                 temp_cir.append(gate[0], qargs=gate[1])
         sub_slices.append(temp_cir)
