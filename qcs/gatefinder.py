@@ -37,13 +37,33 @@ def startCount(Cls):
                 return x
     return Wrapper 
 
-
 def gateLoc(qc, gateName):
-    #print(gateInfo)
+    #print(qc.gateInfo)
+    #print(len(qc.gateInfo[gateName]))
     gateOccur = len(qc.gateInfo[gateName])
-    l = qc.gateInfo[gateName][0]
     print("--------------------------")
-    print("There are", gateOccur, "occurances of gate", gateName, ".\nThey were added to the circuit in the following locations:")
-    print(*traceback.format_list(l), sep='\n')
-    print("--------------------------")
-    #return qc.gateInfo
+    print("There are", gateOccur, "times where the", gateName, "gate was added to the circuit.\nIt was added to the circuit in the following locations:")
+    for i in range(gateOccur):
+        l = qc.gateInfo[gateName][i]
+        print(*traceback.format_list(l), sep='\n')
+        print("--------------------------")
+
+
+
+def catCircuit(cir):
+    cat = ""
+    cirData = cir.data
+    for i in range(len(cirData)):
+        #print(cirData[i])
+        if "HGate" in str(cirData[i][0]):
+            cat = "full-quantum"
+            break
+        else:
+            cat = "pseudo-classical"
+            
+            
+    if cat == "pseudo-classical" and len(cirData) > 60:
+        cat += ", comple"
+    elif cat == "pseudo-classical" and len(cirData) <= 60:
+        cat += ", simple"
+    return cat
